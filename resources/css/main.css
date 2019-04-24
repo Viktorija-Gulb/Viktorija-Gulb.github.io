@@ -1,0 +1,286 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333; }
+
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif; }
+
+h1 {
+  font-size: 34px; }
+
+h2 {
+  font-size: 21px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center; }
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0; }
+
+h4 {
+  color: #3F4A46;
+  line-height: 16px;
+  margin-bottom: 10px;
+  font-weight: 600; }
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  section:nth-child(odd) {
+    background: #fafafa;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb; }
+
+.container {
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 800px; } }
+
+p {
+  text-align: center; }
+
+img {
+  width: inherit; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.img-holder {
+  max-width: 400px; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FB9E58;
+  display: inline-block; }
+
+.description p {
+  padding-left: 20px;
+  position: relative; }
+  .description p:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid green;
+    position: absolute;
+    top: 4px;
+    left: 0; }
+
+.list {
+  margin-top: 20px; }
+  .list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px; }
+    .list li:last-child {
+      margin-bottom: 0; }
+    .list li:before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #008000;
+      position: absolute;
+      top: 8px;
+      left: 0; }
+
+#introduction {
+  position: relative;
+  background: #e0ebe8;
+  padding: 0;
+  margin: 0;
+  min-height: 300px;
+  height: 300px;
+  background: linear-gradient(rgba(237, 237, 237, 0.9), rgba(237, 237, 237, 0.9)), url("images/book-computer-design.jpg");
+  background-size: cover; }
+  #introduction h1 {
+    padding: 10px 0; }
+    @media (min-width: 768px) {
+      #introduction h1 {
+        font-size: 56px; } }
+    @media (min-width: 1024px) {
+      #introduction h1 {
+        font-size: 56px; } }
+  #introduction h2 {
+    padding: 10px 0;
+    font-size: 18px; }
+    @media (min-width: 768px) {
+      #introduction h2 {
+        font-size: 21px; } }
+  @media (min-width: 768px) {
+    #introduction {
+      height: 100vh; } }
+  #introduction .container {
+    display: flex;
+    position: relative;
+    height: inherit; }
+  #introduction .title {
+    margin: auto; }
+
+.intro-title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 300; }
+  @media (min-width: 1024px) {
+    .intro-title {
+      font-size: 62px; } }
+
+#hello p {
+  margin-bottom: 10px;
+  text-align: left; }
+
+#education .box {
+  margin-bottom: 30px; }
+#education .year {
+  margin-bottom: 5px;
+  font-weight: 600; }
+#education .description p {
+  text-align: left; }
+#education .img-holder {
+  width: 100%;
+  margin-top: 15px;
+  border: 1px solid #ebebeb; }
+  #education .img-holder img, #education .img-holder a {
+    width: inherit; }
+  @media (min-width: 768px) {
+    #education .img-holder {
+      width: 47%;
+      display: inline-block;
+      margin-right: 2%; }
+      #education .img-holder img {
+        width: 100%; } }
+
+.what-i-do .skills {
+  text-align: center;
+  padding: 15px 0; }
+  .what-i-do .skills span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 2px solid #ebebeb;
+    border-radius: 30px; }
+    .what-i-do .skills spanspan:first-child {
+      margin-right: 0px; }
+
+#my_works .row .product-box {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #cccccc;
+  margin-bottom: 20px;
+  display: inline-block; }
+  @media (min-width: 768px) {
+    #my_works .row .product-box {
+      width: 47%;
+      margin-right: 2%; } }
+  #my_works .row .product-box img {
+    border-bottom: 1px solid #eeeeee; }
+    @media (min-width: 768px) {
+      #my_works .row .product-box img {
+        width: 100%; } }
+  #my_works .row .product-box span {
+    display: block;
+    padding: 8px 15px;
+    text-transform: uppercase; }
+  #my_works .row .product-box:nth-child(2) {
+    margin-right: 0; }
+
+#contacts .container {
+  text-align: center; }
+  #contacts .container span {
+    display: block; }
+
+footer {
+  background: #B2BBAA;
+  padding: 10px 0;
+  font-size: 12px; }
+  footer span {
+    display: block;
+    text-align: center; }
+
+.footer-list {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center; }
+  .footer-list li {
+    display: inline-block;
+    text-align: center; }
+    .footer-list li a {
+      text-decoration: none;
+      color: inherit; }
+      .footer-list li a:before {
+        content: "";
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: -3px;
+        margin-right: 10px; }
+    .footer-list li #linkedin:before {
+      background-image: url("images/icons/linkedin.png"); }
+    .footer-list li #github:before {
+      background-image: url("images/icons/github.png"); }
+    .footer-list li #codepen:before {
+      background-image: url("images/icons/codepen2.png");
+      width: 30px;
+      height: 30px;
+      vertical-align: middle; }
+
+.contact-mail {
+  margin-bottom: 20px; }
+  .contact-mail::before {
+    content: "";
+    background-image: url("images/icons/envelope2.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -3px;
+    margin-right: 10px; }
+
+header {
+  padding: 30px 15px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  position: absolute;
+  right: 0; }
+  header div {
+    display: inline-block;
+    padding: 0 15px; }
+  header .meniu {
+    vertical-align: top;
+    margin-right: 0;
+    margin-left: auto; }
+    header .meniu a {
+      text-decoration: none;
+      color: inherit; }
+    header .meniu nav ul li {
+      display: inline-block;
+      margin-left: 10px; }
+
+/*# sourceMappingURL=main.css.map */

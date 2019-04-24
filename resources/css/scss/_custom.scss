@@ -1,0 +1,207 @@
+#introduction {
+	position: relative;
+	background: #e0ebe8;
+	padding:0;
+	margin: 0;
+	min-height: 300px;
+	height: 300px;
+	background: linear-gradient(rgba(237, 237, 237, 0.9), 
+				  rgba(237, 237, 237, 0.9)),
+			  url("images/book-computer-design.jpg");         
+	background-size: cover;
+	h1{
+	padding: 10px 0;
+	@media (min-width: 768px) {
+		font-size: 56px;
+	}
+	@media (min-width: 1024px) {
+		font-size: 56px;
+	}
+	}
+	h2 {
+		padding: 10px 0;
+		font-size: 18px;
+		@media (min-width: 768px) {
+			font-size: 21px;
+		}
+	}
+	@media (min-width: 768px) {
+		// background: url("images/book-computer-design.jpg");
+		// background-size: cover;
+		height: 100vh;
+	}
+	.container {
+		display: flex;
+		position: relative;
+		height: inherit;
+	}
+	.title {
+		margin: auto;
+	}
+}
+.intro-title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 300;
+  // color: $color-c;
+	@media (min-width: 1024px){
+		font-size: 62px;
+	}
+}
+#hello {
+	p {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+}
+#education {
+	.box {
+		margin-bottom: 30px;
+	}
+	.year {
+		margin-bottom: 5px;
+		font-weight: 600;
+	}
+	.description {
+		p {
+			text-align: left;
+		}
+	}
+	.img-holder{
+		width: 100%;
+		margin-top: 15px;
+		border: 1px solid #ebebeb;
+		img, a {
+			width: inherit;
+		}
+		@media (min-width: 768px) {
+			width: 47%;
+			display: inline-block;
+			margin-right: 2%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+.what-i-do {
+	.skills {
+		text-align: center;
+		padding: 15px 0;
+		span {
+			display: inline-block;
+			margin-right: 10px;
+			margin-bottom: 20px;
+			padding: 10px 20px;
+	    border: 2px solid #ebebeb;
+	    border-radius: 30px;
+			&span:first-child {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+#my_works {
+	.row {
+
+		.product-box {
+			width: 100%;
+			text-align: center;
+			border: 1px solid #cccccc;
+			margin-bottom: 20px;
+			display: inline-block;
+			@media (min-width: 768px) {
+					width: 47%;
+					margin-right: 2%;
+
+			}
+			img {
+				border-bottom: 1px solid #eeeeee;
+				@media (min-width: 768px) {
+					width: 100%;
+				}
+			}
+			span {
+				display: block;
+				padding: 8px 15px;
+				text-transform: uppercase;
+			}
+			&:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+#contacts {
+	.container {
+		text-align: center;
+		span {
+			display: block;
+		}
+	}
+}
+footer {
+	background: #B2BBAA; // grey background
+	padding: 10px 0;
+	font-size: 12px;
+	span {
+		display: block;
+		text-align: center;
+	}
+}
+	.footer-list {
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
+		li {
+			display: inline-block;
+			text-align: center;
+			a {
+				text-decoration: none;
+				color: inherit;
+				&:before {
+					content: "";
+					background-size: cover;
+					width: 25px;
+					height: 25px;
+					display: inline-block;
+					vertical-align: bottom;
+				margin-bottom: -3px;
+				margin-right: 10px;
+				}
+			}
+			#linkedin:before {
+				background-image: url("images/icons/linkedin.png");
+			}
+			#github:before {
+				background-image: url("images/icons/github.png");
+			}
+			#codepen:before {
+				background-image: url("images/icons/codepen2.png");
+				width: 30px;
+				height: 30px;
+				vertical-align: middle;
+			}
+		}
+	}
+	.contact-mail {
+		margin-bottom: 20px;
+		&::before {
+			content: "";
+			background-image: url("images/icons/envelope2.png");
+			background-size: cover;
+			width: 25px;
+			height: 25px;
+			display: inline-block;
+			vertical-align: bottom;
+		margin-bottom: -3px;
+		margin-right: 10px;
+		}
+	}
+
+
+
+// magnific popup
