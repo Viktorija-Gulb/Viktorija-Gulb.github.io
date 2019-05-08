@@ -18,7 +18,7 @@ $(document).ready(function(){
   var processMq = function(){
       if (mq.matches) {
       	$(".hamburger").click(function(){
-					$(".nav-menu").css("display", "block");
+					$(".nav-menu").css("display", "flex");
 				});
   	
       } 

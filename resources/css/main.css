@@ -263,21 +263,34 @@ footer {
   position: absolute;
   left: 0;
   right: 0;
+  top: 0;
+  bottom: 0;
   background: grey;
-  padding: 40px; }
+  padding: 60px 40px 40px 40px;
+  text-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center; }
   @media (min-width: 768px) {
     .nav-menu {
       position: relative; } }
   .nav-menu a {
     text-decoration: none;
     color: inherit; }
-  @media (min-width: 768px) {
-    .nav-menu nav ul li {
-      display: inline-block;
-      border-right: 1px solid #353535;
-      padding-right: 5px; }
-      .nav-menu nav ul li:last-child {
-        border-style: none; } }
+  .nav-menu nav ul li {
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+    .nav-menu nav ul li:last-child {
+      margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .nav-menu nav ul li {
+        display: inline-block;
+        border-right: 1px solid #353535;
+        padding-right: 5px; }
+        .nav-menu nav ul li:last-child {
+          border-style: none; } }
 
 .hamburger {
   position: absolute;

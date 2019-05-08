@@ -26,8 +26,16 @@ header {
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
     background: grey;
-    padding: 40px;
+    padding: 60px 40px 40px 40px;
+    text-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
 	 	// vertical-align: top;
 	 	// margin-right: 0;
    //  margin-left: auto;
@@ -39,8 +47,14 @@ header {
     	color: inherit;
     }
 	 	nav {
+
 	 		ul {
 	 			li {
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          &:last-child{
+            margin-bottom: 0;
+          }
           @media (min-width: 768px) {          
   	 				display: inline-block;
             border-right: 1px solid #353535;
