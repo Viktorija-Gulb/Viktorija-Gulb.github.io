@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	// hamburger menu
 
-	var mq = window.matchMedia("(max-width: 799px)");
+	var mq = window.matchMedia("(max-width: 768px)");
 
   var processMq = function(){
       if (mq.matches) {
