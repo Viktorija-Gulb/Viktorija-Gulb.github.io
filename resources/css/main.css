@@ -141,29 +141,29 @@ a {
     .intro-title {
       font-size: 62px; } }
 
-#hello p {
+.about p {
   margin-bottom: 10px;
   text-align: left; }
 
-#education .box {
+.education .box {
   margin-bottom: 30px; }
-#education .year {
+.education .year {
   margin-bottom: 5px;
   font-weight: 600; }
-#education .description p {
+.education .description p {
   text-align: left; }
-#education .img-holder {
+.education .img-holder {
   width: 100%;
   margin-top: 15px;
   border: 1px solid #ebebeb; }
-  #education .img-holder img, #education .img-holder a {
+  .education .img-holder img, .education .img-holder a {
     width: inherit; }
   @media (min-width: 768px) {
-    #education .img-holder {
+    .education .img-holder {
       width: 47%;
       display: inline-block;
       margin-right: 2%; }
-      #education .img-holder img {
+      .education .img-holder img {
         width: 100%; } }
 
 .what-i-do .skills {
@@ -179,31 +179,31 @@ a {
     .what-i-do .skills spanspan:first-child {
       margin-right: 0px; }
 
-#my_works .row .product-box {
+.my-work .row .product-box {
   width: 100%;
   text-align: center;
   border: 1px solid #cccccc;
   margin-bottom: 20px;
   display: inline-block; }
   @media (min-width: 768px) {
-    #my_works .row .product-box {
+    .my-work .row .product-box {
       width: 47%;
       margin-right: 2%; } }
-  #my_works .row .product-box img {
+  .my-work .row .product-box img {
     border-bottom: 1px solid #eeeeee; }
     @media (min-width: 768px) {
-      #my_works .row .product-box img {
+      .my-work .row .product-box img {
         width: 100%; } }
-  #my_works .row .product-box span {
+  .my-work .row .product-box span {
     display: block;
     padding: 8px 15px;
     text-transform: uppercase; }
-  #my_works .row .product-box:nth-child(2) {
+  .my-work .row .product-box:nth-child(2) {
     margin-right: 0; }
 
-#contacts .container {
+.contacts .container {
   text-align: center; }
-  #contacts .container span {
+  .contacts .container span {
     display: block; }
 
 footer {
@@ -255,44 +255,6 @@ footer {
     vertical-align: bottom;
     margin-bottom: -3px;
     margin-right: 10px; }
-
-/* padding-bottom and top for image */
-.mfp-no-margins img.mfp-img {
-  padding: 0; }
-
-/* position of shadow behind the image */
-.mfp-no-margins .mfp-figure:after {
-  top: 0;
-  bottom: 0; }
-
-/* padding for main container */
-.mfp-no-margins .mfp-container {
-  padding: 0; }
-
-/* 
-
-for zoom animation 
-uncomment this part if you haven't added this code anywhere else
-
-*/
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-  opacity: 1; }
-
-.mfp-with-zoom.mfp-ready.mfp-bg {
-  opacity: 0.8; }
-
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0; }
 
 @media (max-width: 768px) {
   .nav-menu {

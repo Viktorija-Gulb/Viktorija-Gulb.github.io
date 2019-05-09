@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	// magnific popups
+
 	$('.image-popup-vertical-fit').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
@@ -9,8 +11,6 @@ $(document).ready(function(){
 		}
 		
 	});
-
-
 
 	// hamburger menu
 

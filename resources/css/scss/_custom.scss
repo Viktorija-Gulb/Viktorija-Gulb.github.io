@@ -47,13 +47,13 @@
 		font-size: 62px;
 	}
 }
-#hello {
+.about {
 	p {
 		margin-bottom: 10px;
 		text-align: left;
 	}
 }
-#education {
+.education {
 	.box {
 		margin-bottom: 30px;
 	}
@@ -101,9 +101,8 @@
 	}
 }
 
-#my_works {
+.my-work {
 	.row {
-
 		.product-box {
 			width: 100%;
 			text-align: center;
@@ -133,7 +132,7 @@
 	}
 }
 
-#contacts {
+.contacts {
 	.container {
 		text-align: center;
 		span {
@@ -150,100 +149,52 @@ footer {
 		text-align: center;
 	}
 }
-	.footer-list {
-		max-width: 600px;
-		margin: 0 auto;
+.footer-list {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	li {
+		display: inline-block;
 		text-align: center;
-		li {
-			display: inline-block;
-			text-align: center;
-			a {
-				text-decoration: none;
-				color: inherit;
-				&:before {
-					content: "";
-					background-size: cover;
-					width: 25px;
-					height: 25px;
-					display: inline-block;
-					vertical-align: bottom;
-				margin-bottom: -3px;
-				margin-right: 10px;
-				}
-			}
-			#linkedin:before {
-				background-image: url("images/icons/linkedin.png");
-			}
-			#github:before {
-				background-image: url("images/icons/github.png");
-			}
-			#codepen:before {
-				background-image: url("images/icons/codepen2.png");
-				width: 30px;
-				height: 30px;
-				vertical-align: middle;
+		a {
+			text-decoration: none;
+			color: inherit;
+			&:before {
+				content: "";
+				background-size: cover;
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				vertical-align: bottom;
+			margin-bottom: -3px;
+			margin-right: 10px;
 			}
 		}
+		#linkedin:before {
+			background-image: url("images/icons/linkedin.png");
+		}
+		#github:before {
+			background-image: url("images/icons/github.png");
+		}
+		#codepen:before {
+			background-image: url("images/icons/codepen2.png");
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+		}
 	}
-	.contact-mail {
-		margin-bottom: 20px;
-		&::before {
-			content: "";
-			background-image: url("images/icons/envelope2.png");
-			background-size: cover;
-			width: 25px;
-			height: 25px;
-			display: inline-block;
-			vertical-align: bottom;
+}
+.contact-mail {
+	margin-bottom: 20px;
+	&::before {
+		content: "";
+		background-image: url("images/icons/envelope2.png");
+		background-size: cover;
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		vertical-align: bottom;
 		margin-bottom: -3px;
 		margin-right: 10px;
-		}
 	}
-
-
-
-// magnific popup
-/* padding-bottom and top for image */
-.mfp-no-margins img.mfp-img {
-	padding: 0;
-}
-/* position of shadow behind the image */
-.mfp-no-margins .mfp-figure:after {
-	top: 0;
-	bottom: 0;
-}
-/* padding for main container */
-.mfp-no-margins .mfp-container {
-	padding: 0;
-}
-
-
-/* 
-
-for zoom animation 
-uncomment this part if you haven't added this code anywhere else
-
-*/
-
-
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	-webkit-transition: all 0.3s ease-out; 
-	-moz-transition: all 0.3s ease-out; 
-	-o-transition: all 0.3s ease-out; 
-	transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-		opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-		opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container, 
-.mfp-with-zoom.mfp-removing.mfp-bg {
-	opacity: 0;
 }
