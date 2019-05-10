@@ -4,33 +4,33 @@
   }
 }
 .nav-menu {
-@media (max-width: 768px){    
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(237, 237, 237, 0.1);
-  padding: 60px 40px 40px 40px;
-  text-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  justify-content: center;
-}
+  @media (max-width: 768px){    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(237, 237, 237, 0.1);
+    padding: 60px 40px 40px 40px;
+    text-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 	vertical-align: top;
 	margin-right: 0;
-margin-left: auto;
-@media (min-width: 769px) {
-position: absolute;
-right: 0;
-top: 40px;
-}
-a {
-	text-decoration: none;
-	color: inherit;
-}
+  margin-left: auto;
+  @media (min-width: 769px) {
+    position: absolute;
+    right: 0;
+    top: 40px;
+  }
+  a {
+  	text-decoration: none;
+  	color: inherit;
+  }
 	nav {
 		ul {
 			li {
@@ -60,16 +60,16 @@ a {
     right: 20px;
     span {
       display: block;
-      width: 30px;
+      width: 33px;
       height: 2px;
       margin-bottom: 5px;
-      background: #333;
+      background: $color-text;
     }
   }
 
   .close {
     position: absolute;
-    right: 32px;
+    right: 16px;
     top: 32px;
     width: 32px;
     height: 32px;
@@ -84,7 +84,7 @@ a {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: #080808;
+    background-color: $color-text;
   }
   .close:before {
     transform: rotate(45deg);

@@ -1,7 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	color: $color-a;
+	color: $color-text;
 }
 h1, h2, h3, h4 {
 	font-family: 'Lato', sans-serif;
@@ -32,8 +32,8 @@ section{
 	padding-bottom: 40px;
 	&:nth-child(odd){
 		background: #fafafa;
-		border-top: 1px solid #ebebeb;
-		border-bottom: 1px solid #ebebeb;
+		border-top: 1px solid $color-sectiondivider;
+		border-bottom: 1px solid $color-sectiondivider;
 	}
 }
 .container {
@@ -57,16 +57,16 @@ a {
 .img-holder {
 	max-width: 400px;
 }
-.arrow-down {
-  width: 0; 
-  height: 0;
-  margin-left: 5px; 
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+// .arrow-down {
+//   width: 0; 
+//   height: 0;
+//   margin-left: 5px; 
+//   border-left: 10px solid transparent;
+//   border-right: 10px solid transparent;
   
-  border-top: 10px solid $color-d;
-  display: inline-block;
-}
+//   border-top: 10px solid $color-d;
+//   display: inline-block;
+// }
 
 .description {
 	p {
@@ -79,7 +79,7 @@ a {
 		  height: 0; 
 		  border-top: 7px solid transparent;
 		  border-bottom: 7px solid transparent;
-		  border-left: 7px solid green;
+		  border-left: 7px solid $color-bulletpoints;
 			position: absolute;
 			top: 4px;
 			left: 0;
@@ -102,7 +102,7 @@ a {
 			width: 5px;
 			height: 5px;
 			border-radius: 50%;
-			background: #008000;
+			background: $color-bulletpoints;
 			position: absolute;
 			top: 8px;
 			left: 0;

@@ -12,6 +12,15 @@ $(document).ready(function(){
 		
 	});
 
+	// when hover product-box
+
+	$(".product-box").hover(function(){
+	  $(this).children("*").css("bottom", "44px");
+	  }, function(){
+	  $(this).children("*").css("bottom", "-500px");
+	});
+
+	
 	// hamburger menu
 
 	var mq = window.matchMedia("(max-width: 768px)");

@@ -56,15 +56,6 @@ a {
 .img-holder {
   max-width: 400px; }
 
-.arrow-down {
-  width: 0;
-  height: 0;
-  margin-left: 5px;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #FB9E58;
-  display: inline-block; }
-
 .description p {
   padding-left: 20px;
   position: relative; }
@@ -75,7 +66,7 @@ a {
     height: 0;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 7px solid green;
+    border-left: 7px solid #008000;
     position: absolute;
     top: 4px;
     left: 0; }
@@ -155,7 +146,7 @@ a {
 .education .img-holder {
   width: 100%;
   margin-top: 15px;
-  border: 1px solid #ebebeb; }
+  border: 1px solid #cccccc; }
   .education .img-holder img, .education .img-holder a {
     width: inherit; }
   @media (min-width: 768px) {
@@ -174,12 +165,13 @@ a {
     margin-right: 10px;
     margin-bottom: 20px;
     padding: 10px 20px;
-    border: 2px solid #ebebeb;
+    border: 1px solid #cccccc;
     border-radius: 30px; }
     .what-i-do .skills spanspan:first-child {
       margin-right: 0px; }
 
 .my-work .row .product-box {
+  position: relative;
   width: 100%;
   text-align: center;
   border: 1px solid #cccccc;
@@ -190,7 +182,7 @@ a {
       width: 47%;
       margin-right: 2%; } }
   .my-work .row .product-box img {
-    border-bottom: 1px solid #eeeeee; }
+    border-bottom: 1px solid #cccccc; }
     @media (min-width: 768px) {
       .my-work .row .product-box img {
         width: 100%; } }
@@ -200,6 +192,13 @@ a {
     text-transform: uppercase; }
   .my-work .row .product-box:nth-child(2) {
     margin-right: 0; }
+
+.hover-element {
+  background: rgba(237, 237, 237, 0.9);
+  width: 100%;
+  position: absolute;
+  bottom: -500px;
+  height: 400px; }
 
 .contacts .container {
   text-align: center; }
@@ -305,14 +304,14 @@ footer {
     right: 20px; }
     .hamburger span {
       display: block;
-      width: 30px;
+      width: 33px;
       height: 2px;
       margin-bottom: 5px;
       background: #333; }
 
   .close {
     position: absolute;
-    right: 32px;
+    right: 16px;
     top: 32px;
     width: 32px;
     height: 32px;
@@ -327,7 +326,7 @@ footer {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: #080808; }
+    background-color: #333; }
 
   .close:before {
     transform: rotate(45deg); }
