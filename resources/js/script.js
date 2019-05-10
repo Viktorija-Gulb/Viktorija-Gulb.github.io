@@ -1,11 +1,13 @@
 $(document).ready(function(){
 
+	// magnific popups in work section
+
 	$('.open-popup-link').magnificPopup({
 	  type:'inline',
-	  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	  midClick: true // 
 	});
 
-	// magnific popups
+	// magnific popups in education section
 
 	$('.image-popup-vertical-fit').magnificPopup({
 		type: 'image',
