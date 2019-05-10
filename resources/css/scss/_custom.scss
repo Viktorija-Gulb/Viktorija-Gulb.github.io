@@ -111,9 +111,11 @@
 			margin-bottom: 20px;
 			display: inline-block;
 			@media (min-width: 768px) {
-					width: 47%;
-					margin-right: 2%;
-
+				width: 47%;
+				margin-right: 2%;
+			}
+			a {
+				width: 100%;
 			}
 			img {
 				border-bottom: 1px solid $color-border;
@@ -132,14 +134,19 @@
 		}
 	}
 }
-
-.hover-element {
-	background: rgba(237, 237, 237, 0.9);
-  width: 100%;
-  position: absolute;
-  bottom: -500px;
-  height: 400px;
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
 }
+// .hover-element {
+// 	display: none;
+// 	background: rgba(237, 237, 237, 0.9);
+
+// }
 
 .contacts {
 	.container {

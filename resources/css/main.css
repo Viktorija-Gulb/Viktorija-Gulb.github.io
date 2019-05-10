@@ -181,6 +181,8 @@ a {
     .my-work .row .product-box {
       width: 47%;
       margin-right: 2%; } }
+  .my-work .row .product-box a {
+    width: 100%; }
   .my-work .row .product-box img {
     border-bottom: 1px solid #cccccc; }
     @media (min-width: 768px) {
@@ -193,12 +195,13 @@ a {
   .my-work .row .product-box:nth-child(2) {
     margin-right: 0; }
 
-.hover-element {
-  background: rgba(237, 237, 237, 0.9);
-  width: 100%;
-  position: absolute;
-  bottom: -500px;
-  height: 400px; }
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto; }
 
 .contacts .container {
   text-align: center; }

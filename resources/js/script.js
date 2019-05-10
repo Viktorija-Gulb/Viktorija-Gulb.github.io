@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	$('.open-popup-link').magnificPopup({
+	  type:'inline',
+	  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	});
+
 	// magnific popups
 
 	$('.image-popup-vertical-fit').magnificPopup({
@@ -15,12 +20,12 @@ $(document).ready(function(){
 	// when hover product-box
 
 	$(".product-box").hover(function(){
-	  $(this).children("*").css("bottom", "44px");
-	  }, function(){
-	  $(this).children("*").css("bottom", "-500px");
+	  // $(this).children("div").css("bottom", "0px");
+	  // }, function(){
+	  // $(this).children("div").css("bottom", "-500px");
 	});
 
-	
+
 	// hamburger menu
 
 	var mq = window.matchMedia("(max-width: 768px)");
