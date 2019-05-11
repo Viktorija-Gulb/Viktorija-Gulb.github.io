@@ -19,14 +19,6 @@ $(document).ready(function(){
 		
 	});
 
-	// when hover product-box
-
-	$(".product-box").hover(function(){
-	  // $(this).children("div").css("bottom", "0px");
-	  // }, function(){
-	  // $(this).children("div").css("bottom", "-500px");
-	});
-
 
 	// hamburger menu
 
