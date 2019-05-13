@@ -16,8 +16,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  margin: 5px 0;
-  font-weight: 600; }
+  margin: 5px 0; }
 
 section {
   padding: 40px 0 40px 0; }
@@ -130,7 +129,8 @@ a {
 .education .year {
   margin-bottom: 5px;
   font-weight: 600;
-  font-size: 18px; }
+  font-size: 18px;
+  position: relative; }
 .education .description p {
   text-align: left; }
 .education .img-holder {
@@ -215,7 +215,7 @@ a {
 
 .white-popup {
   position: relative;
-  background: #FFF;
+  background: #FFFFFF;
   width: auto;
   max-width: 500px;
   margin: 20px auto; }

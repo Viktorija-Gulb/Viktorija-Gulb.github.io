@@ -17,13 +17,12 @@ h2 {
 h3 {
 	font-size: 18px;
 	margin: 5px 0;
-	font-weight: 600;
 }
 
 section{
 	padding: 40px 0 40px 0;
 	&:nth-child(odd){
-		background: #fafafa;
+		background: $section-background;
 		border-top: 1px solid $color-sectiondivider;
 		border-bottom: 1px solid $color-sectiondivider;
 	}
