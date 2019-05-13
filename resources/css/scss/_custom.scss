@@ -4,9 +4,7 @@
 	margin: 0;
 	min-height: 300px;
 	height: 300px;
-	background: linear-gradient(rgba(237, 237, 237, 0.9), 
-				  rgba(237, 237, 237, 0.9)),
-			  url("images/book-computer-design.jpg");         
+	background: linear-gradient(rgba(237, 237, 237, 0.9), rgba(237, 237, 237, 0.9)), url("images/book-computer-design.jpg");         
 	background-size: cover;
 	h1{
 	padding: 10px 0;
@@ -37,8 +35,7 @@
 	}
 }
 .intro-title {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin: 15px 0 10px 0;
   text-align: center;
   font-weight: 300;
 	@media (min-width: 1024px){
@@ -87,8 +84,7 @@
 		padding: 15px 0;
 		span {
 			display: inline-block;
-			margin-right: 10px;
-			margin-bottom: 20px;
+			margin: 0 10px 20px 0;
 			padding: 10px 20px;
 	    border: 1px solid $color-border;
 	    border-radius: 30px;
@@ -170,7 +166,6 @@
 .white-popup {
   position: relative;
   background: #FFF; // white
- //padding: 20px;
   width: auto;
   max-width: 500px;
   margin: 20px auto;

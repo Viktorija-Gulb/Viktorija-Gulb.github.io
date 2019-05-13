@@ -11,9 +11,7 @@ h1{
 }
 h2 {
 	font-size: 21px;
-	margin-top: 10px;
-  margin-bottom: 20px;
-  margin-top: 0;
+  margin: 0 0 20px 0;
   text-align: center;
 }
 h3 {
@@ -22,8 +20,7 @@ h3 {
 }
 
 section{
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 40px 0 40px 0;
 	&:nth-child(odd){
 		background: #fafafa;
 		border-top: 1px solid $color-sectiondivider;
