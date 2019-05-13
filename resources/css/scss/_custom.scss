@@ -108,6 +108,17 @@
 			border: 1px solid $color-border;
 			margin-bottom: 20px;
 			display: inline-block;
+			// &:after {
+		 //  	content: "Placeholder";
+		 //  	display: block;
+		 //  	position: absolute;
+		 //  	top: 32%;
+		 //  	left:20%;
+		 //  	font-size: 350%;
+		 //  	color: $color-border;
+		 //  	transform: rotate(25deg);
+		 //  	opacity: 0.4;
+			// }
 			@media (min-width: 768px) {
 				width: 47%;
 				margin-right: 2%;
