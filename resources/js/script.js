@@ -31,10 +31,9 @@ $(document).ready(function(){
 					$(this).css("display", "none");
 					$(".title").css("display", "none");
 				});
-  	
       } 
       else{
-
+        $(".title").removeAttr("style");
       }
 
       if(mq.matches) {
@@ -42,9 +41,9 @@ $(document).ready(function(){
          	$(".nav-menu").removeAttr("style");
          	$(".hamburger").removeAttr("style");
          	$(".title").removeAttr("style");
-         	
-          console.log("click work");
         });
+      }else {
+        
       }
   };
 
