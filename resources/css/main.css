@@ -18,9 +18,9 @@ h3 {
   font-size: 18px;
   margin: 5px 0; }
 
-section {
+section, .contacts {
   padding: 40px 0 40px 0; }
-  section:nth-child(odd) {
+  section:nth-child(odd), .contacts:nth-child(odd) {
     background: #fafafa;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb; }
@@ -120,31 +120,31 @@ a {
     .intro-title {
       font-size: 62px; } }
 
-.about p {
+.section-about p {
   margin-bottom: 10px;
   text-align: left; }
 
-.education .box {
+.section-education .box {
   margin-bottom: 30px; }
-.education .year {
+.section-education .year {
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 18px;
   position: relative; }
-.education .description p {
+.section-education .description p {
   text-align: left; }
-.education .img-holder {
+.section-education .img-holder {
   width: 100%;
   margin-top: 15px;
   border: 1px solid #cccccc; }
-  .education .img-holder img, .education .img-holder a {
+  .section-education .img-holder img, .section-education .img-holder a {
     width: inherit; }
   @media (min-width: 768px) {
-    .education .img-holder {
+    .section-education .img-holder {
       width: 47%;
       display: inline-block;
       margin-right: 2%; }
-      .education .img-holder img {
+      .section-education .img-holder img {
         width: 100%; } }
 
 .what-i-do .skills {

@@ -42,13 +42,13 @@
 		font-size: 62px;
 	}
 }
-.about {
+.section-about {
 	p {
 		margin-bottom: 10px;
 		text-align: left;
 	}
 }
-.education {
+.section-education {
 	.box {
 		margin-bottom: 30px;
 	}
@@ -186,6 +186,7 @@ h4 {
 // end when hover product box show button with open popup with project description
 
 .contacts {
+  @extend section;
 	.container {
 		text-align: center;
 		span {
