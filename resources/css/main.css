@@ -150,13 +150,13 @@ a {
 .what-i-do .skills {
   text-align: center;
   padding: 15px 0; }
-  .what-i-do .skills span {
+  .what-i-do .skills li {
     display: inline-block;
     margin: 0 10px 20px 0;
     padding: 10px 20px;
     border: 1px solid #cccccc;
     border-radius: 30px; }
-    .what-i-do .skills spanspan:first-child {
+    .what-i-do .skills lispan:first-child {
       margin-right: 0px; }
 
 .my-work .row .product-box {
