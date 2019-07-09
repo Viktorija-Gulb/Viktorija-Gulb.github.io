@@ -1,254 +1,253 @@
 #introduction {
-	position: relative;;
-	padding:0;
-	margin: 0;
-	min-height: 300px;
-	height: 300px;
-	background: linear-gradient(rgba(237, 237, 237, 0.9), rgba(237, 237, 237, 0.9)), url("images/book-computer-design.jpg");         
-	background-size: cover;
-	h1{
-	padding: 10px 0;
-	@media (min-width: 768px) {
-		font-size: 56px;
-	}
-	@media (min-width: 1024px) {
-		font-size: 56px;
-	}
-	}
-	h2 {
-		padding: 10px 0;
-		font-size: 18px;
-		@media (min-width: 768px) {
-			font-size: 21px;
-		}
-	}
-	@media (min-width: 768px) {
-		height: 100vh;
-	}
-	.container {
-		display: flex;
-		position: relative;
-		height: inherit;
-	}
-	.title {
-		margin: auto;
-	}
+  position: relative;
+  padding: 0;
+  margin: 0;
+  min-height: 300px;
+  height: 300px;
+  background: linear-gradient(
+      rgba(237, 237, 237, 0.9),
+      rgba(237, 237, 237, 0.9)
+    ),
+    url("images/book-computer-design.jpg");
+  background-size: cover;
+  h1 {
+    padding: 10px 0;
+    @media (min-width: 768px) {
+      font-size: 56px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 56px;
+    }
+  }
+  h2 {
+    padding: 10px 0;
+    font-size: 18px;
+    @media (min-width: 768px) {
+      font-size: 21px;
+    }
+  }
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    position: relative;
+    height: inherit;
+  }
+  .title {
+    margin: auto;
+  }
 }
 .intro-title {
   margin: 15px 0 10px 0;
   text-align: center;
   font-weight: 300;
-	@media (min-width: 1024px){
-		font-size: 62px;
-	}
+  @media (min-width: 1024px) {
+    font-size: 62px;
+  }
 }
 .section-about {
-	p {
-		margin-bottom: 10px;
-		text-align: left;
-	}
+  p {
+    margin-bottom: 10px;
+    text-align: left;
+  }
 }
 .section-education {
-	.box {
-		margin-bottom: 30px;
-	}
-	.year {
-		margin-bottom: 5px;
-		font-weight: 600;
-		font-size: 18px;
-		position: relative;
-	}
-	.description {
-		p {
-			text-align: left;
-		}
-	}
-	.img-holder{
-		width: 100%;
-		margin-top: 15px;
-		border: 1px solid $color-border;
-		img, a {
-			width: inherit;
-		}
-		@media (min-width: 768px) {
-			width: 47%;
-			display: inline-block;
-			margin-right: 2%;
-			img {
-				width: 100%;
-			}
-		}
-	}
+  .box {
+    margin-bottom: 30px;
+  }
+  .year {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+  }
+  .description {
+    p {
+      text-align: left;
+    }
+  }
+  .img-holder {
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid $color-border;
+    img,
+    a {
+      width: inherit;
+    }
+    @media (min-width: 768px) {
+      width: 47%;
+      display: inline-block;
+      margin-right: 2%;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 .what-i-do {
-	.skills {
-		text-align: center;
-		padding: 15px 0;
-		li {
-			display: inline-block;
-			margin: 0 10px 20px 0;
-			padding: 10px 20px;
-	    border: 1px solid $color-border;
-	    border-radius: 30px;
-			&span:first-child {
-				margin-right: 0px;
-			}
-		}
-	}
+  .skills {
+    text-align: center;
+    padding: 15px 0;
+    li {
+      display: inline-block;
+      margin: 0 10px 20px 0;
+      padding: 10px 20px;
+      border: 1px solid $color-border;
+      border-radius: 30px;
+      &span:first-child {
+        margin-right: 0px;
+      }
+    }
+  }
 }
 
 .my-work {
-	.row {
-		.product-box {
-			position: relative;
-			width: 100%;
-			text-align: center;
-			border: 1px solid $color-border;
-			margin-bottom: 20px;
-			display: inline-block;
-			@media (min-width: 768px) {
-				width: 47%;
-				margin-right: 2%;
-			}
-			a {
-				width: inherit;
-				display: block;
-			}
-			img {
-				border-bottom: 1px solid $color-border;
-				transition: 1s ease;
-  			backface-visibility: hidden;
-			  display: block;
-			  width: 100%;
-			  height: auto;
-			}
-			span {
-				display: block;
-				padding: 8px 15px;
-				text-transform: uppercase;
-			}
-			h3 {
-				padding: 8px 15px;
-				text-transform: uppercase;
-				font-size: 16px;
-			}
-			&:nth-child(2) {
-				margin-right: 0;
-			}
-		}
-	}
-}
-// on hover product box show button wich open popup with project description
-.middle {
-  transition: 1s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.product-box:hover img {
-  opacity: 0.3;
-}
-
-.product-box:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: $button-background;
-  color: white;
-  font-size: 16px;
-  a {
-  	padding: 16px 32px;
+  .row {
+    ul {
+      display: flex;
+    }
+    .product-box {
+      position: relative;
+      width: 100%;
+      border: 1px solid $color-border;
+      margin-bottom: 20px;
+      display: inline-block;
+      @media (min-width: 768px) {
+        width: 47%;
+        margin-right: 2%;
+      }
+      a {
+        width: inherit;
+        display: block;
+      }
+      img {
+        border-bottom: 1px solid $color-border;
+        transition: 1s ease;
+        backface-visibility: hidden;
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      span {
+        display: block;
+        padding: 8px 15px;
+        text-transform: uppercase;
+      }
+      h3 {
+        padding: 10px 15px;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin: 0;
+      }
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
   }
 }
-.white-popup {
-  position: relative;
-  background: $color-b; 
-  width: auto;
-  max-width: 500px;
-  margin: 20px auto;
+.hide-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 54px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  transition: 0.5s ease;
+  p {
+    margin-bottom: 10px;
+  }
+  .pr-description {
+    transition: 0.6s ease;
+    display: none;
+  }
 }
 
-.pr-description{
-	padding: 15px;
+.product-box:hover .hide-content {
+  height: 100%;
+  background: rgba(37, 37, 34, 0.8);
+}
+.product-box:hover .pr-description {
+  display: block;
+}
+
+.pr-description {
+  padding: 15px;
 }
 h4 {
-	padding: 15px;
-  background: $button-background;
+  padding: 15px;
   color: $color-b;
   font-size: 20px;
 }
-// end when hover product box show button with open popup with project description
+
 
 .contacts {
   @extend section;
-	.container {
-		text-align: center;
-		span {
-			display: block;
-		}
-	}
+  .container {
+    text-align: center;
+    span {
+      display: block;
+    }
+  }
 }
 footer {
-	background: #B2BBAA; // grey background
-	padding: 10px 0;
-	font-size: 12px;
-	span {
-		display: block;
-		text-align: center;
-	}
+  padding: 10px 0;
+  font-size: 12px;
+  background: #fafafa;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  span {
+    display: block;
+    text-align: center;
+  }
 }
 .footer-list {
-	max-width: 600px;
-	margin: 0 auto;
-	text-align: center;
-	li {
-		display: inline-block;
-		text-align: center;
-		a {
-			text-decoration: none;
-			color: inherit;
-			&:before {
-				content: "";
-				background-size: cover;
-				width: 25px;
-				height: 25px;
-				display: inline-block;
-				vertical-align: bottom;
-			margin-bottom: -3px;
-			margin-right: 10px;
-			}
-		}
-		#linkedin:before {
-			background-image: url("images/icons/linkedin.png");
-		}
-		#github:before {
-			background-image: url("images/icons/github.png");
-		}
-		#codepen:before {
-			background-image: url("images/icons/codepen2.png");
-			width: 30px;
-			height: 30px;
-			vertical-align: middle;
-		}
-	}
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  li {
+    display: inline-block;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:before {
+        content: "";
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: -3px;
+        margin-right: 10px;
+      }
+    }
+    #linkedin:before {
+      background-image: url("images/icons/linkedin.png");
+    }
+    #github:before {
+      background-image: url("images/icons/github.png");
+    }
+    #codepen:before {
+      background-image: url("images/icons/codepen2.png");
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+  }
 }
 .contact-mail {
-	margin-bottom: 20px;
-	&::before {
-		content: "";
-		background-image: url("images/icons/envelope2.png");
-		background-size: cover;
-		width: 25px;
-		height: 25px;
-		display: inline-block;
-		vertical-align: bottom;
-		margin-bottom: -3px;
-		margin-right: 10px;
-	}
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    background-image: url("images/icons/envelope2.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -3px;
+    margin-right: 10px;
+  }
 }

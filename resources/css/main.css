@@ -33,9 +33,6 @@ section, .contacts {
     .container {
       max-width: 800px; } }
 
-p {
-  text-align: center; }
-
 img {
   width: inherit; }
 
@@ -137,7 +134,8 @@ a {
   width: 100%;
   margin-top: 15px;
   border: 1px solid #cccccc; }
-  .section-education .img-holder img, .section-education .img-holder a {
+  .section-education .img-holder img,
+  .section-education .img-holder a {
     width: inherit; }
   @media (min-width: 768px) {
     .section-education .img-holder {
@@ -159,10 +157,11 @@ a {
     .what-i-do .skills lispan:first-child {
       margin-right: 0px; }
 
+.my-work .row ul {
+  display: flex; }
 .my-work .row .product-box {
   position: relative;
   width: 100%;
-  text-align: center;
   border: 1px solid #cccccc;
   margin-bottom: 20px;
   display: inline-block; }
@@ -185,48 +184,40 @@ a {
     padding: 8px 15px;
     text-transform: uppercase; }
   .my-work .row .product-box h3 {
-    padding: 8px 15px;
+    padding: 10px 15px;
     text-transform: uppercase;
-    font-size: 16px; }
+    font-size: 16px;
+    margin: 0; }
   .my-work .row .product-box:nth-child(2) {
     margin-right: 0; }
 
-.middle {
-  transition: 1s ease;
-  opacity: 0;
+.hide-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center; }
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 54px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  transition: 0.5s ease; }
+  .hide-content p {
+    margin-bottom: 10px; }
+  .hide-content .pr-description {
+    transition: 0.6s ease;
+    display: none; }
 
-.product-box:hover img {
-  opacity: 0.3; }
+.product-box:hover .hide-content {
+  height: 100%;
+  background: rgba(37, 37, 34, 0.8); }
 
-.product-box:hover .middle {
-  opacity: 1; }
-
-.text {
-  background-color: #3ec152;
-  color: white;
-  font-size: 16px; }
-  .text a {
-    padding: 16px 32px; }
-
-.white-popup {
-  position: relative;
-  background: #FFFFFF;
-  width: auto;
-  max-width: 500px;
-  margin: 20px auto; }
+.product-box:hover .pr-description {
+  display: block; }
 
 .pr-description {
   padding: 15px; }
 
 h4 {
   padding: 15px;
-  background: #3ec152;
   color: #FFFFFF;
   font-size: 20px; }
 
@@ -236,9 +227,11 @@ h4 {
     display: block; }
 
 footer {
-  background: #B2BBAA;
   padding: 10px 0;
-  font-size: 12px; }
+  font-size: 12px;
+  background: #fafafa;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb; }
   footer span {
     display: block;
     text-align: center; }
