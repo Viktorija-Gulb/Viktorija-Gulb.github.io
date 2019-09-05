@@ -6,7 +6,6 @@ $(document).ready(function() {
     midClick: true //
   });
 
-
   // magnific popups in education section
 
   $(".image-popup-vertical-fit").magnificPopup({
@@ -31,13 +30,14 @@ $(document).ready(function() {
       });
     } else {
       $(".title").removeAttr("style");
+      $(".nav-menu").removeAttr("style");
     }
 
     if (mq.matches) {
       $(".close").click(function() {
-        $(".nav-menu").removeAttr("style");
+        //$(".nav-menu").removeAttr("style");
         $(".hamburger").removeAttr("style");
-        $(".title").removeAttr("style");
+        //$(".title").removeAttr("style");
       });
     } else {
     }
@@ -53,21 +53,20 @@ $(document).ready(function() {
   });
 });
 
-
 // hover effect in work section
 
-  // const hideContent = document.querySelector(".hide-content");
-  // const productBox = document.querySelector(".product-box");
-  // let showText = false;
+// const hideContent = document.querySelector(".hide-content");
+// const productBox = document.querySelector(".product-box");
+// let showText = false;
 
-  // productBox.addEventListener("mouseover", viewText);
+// productBox.addEventListener("mouseover", viewText);
 
-  // function viewText() {
-  //   if(!showText) {
-  //     hideContent.classList.add("show");
-  //     showText = true;
-  //   } else {
-  //     hideContent.classList.remove("show");
-  //     showText = false;
-  //   }
-  // }
+// function viewText() {
+//   if(!showText) {
+//     hideContent.classList.add("show");
+//     showText = true;
+//   } else {
+//     hideContent.classList.remove("show");
+//     showText = false;
+//   }
+// }
