@@ -1,1 +1,3 @@
-sass --watch main.scss:../main.css
+Portfolio
+
+Run sass: sass --watch main.scss:../main.css
