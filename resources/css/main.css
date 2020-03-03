@@ -231,6 +231,8 @@ a {
 .my-work .row .product-box a {
   width: inherit;
   display: block;
+  text-align: right;
+  margin-top: 40px;
 }
 .my-work .row .product-box img {
   border-bottom: 1px solid #cccccc;
@@ -398,6 +400,9 @@ footer span {
 .nav-menu a {
   text-decoration: none;
   color: inherit;
+}
+.nav-menu a:hover {
+  color: #1a651a;
 }
 .nav-menu nav ul li {
   margin-bottom: 20px;

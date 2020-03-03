@@ -29,7 +29,11 @@
   }
   a {
   	text-decoration: none;
-  	color: inherit;
+    color: inherit;
+    
+    &:hover {
+      color: #1a651a;
+    }
   }
 	nav {
 		ul {
