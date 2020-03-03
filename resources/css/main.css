@@ -20,7 +20,11 @@ h2 {
 
 h3 {
   font-size: 18px;
-  margin: 5px 0;
+  margin: 10px 0;
+}
+
+strong {
+  font-weight: 700;
 }
 
 section, .contacts {
@@ -158,13 +162,17 @@ a {
 }
 
 .section-education .box {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .section-education .year {
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 18px;
   position: relative;
+}
+.section-education h4 {
+  margin: 10px 0;
+  font-size: 18px;
 }
 .section-education .description p {
   text-align: left;
@@ -246,6 +254,11 @@ a {
 .my-work .row .product-box:nth-child(2) {
   margin-right: 0;
 }
+.my-work h4 {
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 20px;
+}
 
 .hide-content {
   position: absolute;
@@ -276,12 +289,6 @@ a {
 
 .pr-description {
   padding: 15px;
-}
-
-h4 {
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 20px;
 }
 
 .contacts .container {

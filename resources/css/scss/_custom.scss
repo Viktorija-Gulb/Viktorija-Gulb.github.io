@@ -54,13 +54,17 @@
 }
 .section-education {
   .box {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .year {
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 18px;
     position: relative;
+  }
+  h4 {
+    margin: 10px 0;
+    font-size: 18px;
   }
   .description {
     p {
@@ -145,6 +149,11 @@
       }
     }
   }
+  h4 {
+    padding: 15px;
+    color: $color-b;
+    font-size: 20px;
+  }
 }
 .hide-content {
   position: absolute;
@@ -175,11 +184,7 @@
 .pr-description {
   padding: 15px;
 }
-h4 {
-  padding: 15px;
-  color: $color-b;
-  font-size: 20px;
-}
+
 
 
 .contacts {
