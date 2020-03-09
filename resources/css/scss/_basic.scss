@@ -42,13 +42,14 @@ section{
 
 img {
 	width: inherit;
+	width: 100%;
 }
 a {
 	text-decoration: none;
 	color: inherit;
 }
 .img-holder {
-	max-width: 290px;
+	//max-width: 290px;
 }
 
 .description {

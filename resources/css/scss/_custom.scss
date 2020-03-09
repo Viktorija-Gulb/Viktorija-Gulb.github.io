@@ -153,7 +153,7 @@
   }
   h4 {
     padding: 15px;
-    color: $color-b;
+    //color: $color-b;
     font-size: 20px;
   }
 }
@@ -256,5 +256,39 @@ footer {
     vertical-align: bottom;
     margin-bottom: -3px;
     margin-right: 10px;
+  }
+}
+
+
+.list-of-works {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-exmpl {
+  display: flex;
+  margin-bottom: 30px;
+
+  .comment {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 30px;
+  }
+
+  .img-holder {
+    flex: 1;
+    border: 1px solid $color-border;
+  }
+
+  .pr-description {
+    text-align: right;
+
+    a {
+      margin-top: 20px;
+      display: block;
+    }
   }
 }

@@ -49,15 +49,12 @@ section:nth-child(odd), .contacts:nth-child(odd) {
 
 img {
   width: inherit;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.img-holder {
-  max-width: 290px;
 }
 
 .description p {
@@ -258,7 +255,6 @@ a {
 }
 .my-work h4 {
   padding: 15px;
-  color: #FFFFFF;
   font-size: 20px;
 }
 
@@ -361,6 +357,35 @@ footer span {
   vertical-align: bottom;
   margin-bottom: -3px;
   margin-right: 10px;
+}
+
+.list-of-works {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-exmpl {
+  display: flex;
+  margin-bottom: 30px;
+}
+.work-exmpl .comment {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 30px;
+}
+.work-exmpl .img-holder {
+  flex: 1;
+  border: 1px solid #cccccc;
+}
+.work-exmpl .pr-description {
+  text-align: right;
+}
+.work-exmpl .pr-description a {
+  margin-top: 20px;
+  display: block;
 }
 
 @media (max-width: 768px) {
