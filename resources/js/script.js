@@ -35,9 +35,9 @@ $(document).ready(function() {
 
     if (mq.matches) {
       $(".close").click(function() {
-        //$(".nav-menu").removeAttr("style");
+        $(".nav-menu").removeAttr("style");
         $(".hamburger").removeAttr("style");
-        //$(".title").removeAttr("style");
+        $(".title").removeAttr("style");
       });
     } else {
     }
