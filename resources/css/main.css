@@ -103,7 +103,7 @@ a {
   margin: 0;
   min-height: 300px;
   height: 300px;
-  background: linear-gradient(rgba(237, 237, 237, 0.9), rgba(237, 237, 237, 0.9)), url("images/book-computer-design.jpg");
+  background: linear-gradient(rgba(237, 237, 237, 0.7), rgba(237, 237, 237, 0.8)), url("images/book-computer-design.jpg");
   background-size: cover;
 }
 #introduction h1 {
@@ -123,6 +123,12 @@ a {
   padding: 10px 0;
   font-size: 18px;
 }
+#introduction h2:after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background: red;
+}
 @media (min-width: 768px) {
   #introduction h2 {
     font-size: 21px;
@@ -140,6 +146,16 @@ a {
 }
 #introduction .title {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#introduction .title__underline {
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: #333;
+  margin: 20px 0;
 }
 
 .intro-title {
@@ -308,20 +324,20 @@ footer span {
   text-align: center;
 }
 
-.footer-list {
+.social-icons {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
-.footer-list li {
+.social-icons li {
   display: inline-block;
   text-align: center;
 }
-.footer-list li a {
+.social-icons li a {
   text-decoration: none;
   color: inherit;
 }
-.footer-list li a:before {
+.social-icons li a:before {
   content: "";
   background-size: cover;
   width: 25px;
@@ -331,13 +347,13 @@ footer span {
   margin-bottom: -3px;
   margin-right: 10px;
 }
-.footer-list li #linkedin:before {
+.social-icons li #linkedin:before {
   background-image: url("images/icons/linkedin.png");
 }
-.footer-list li #github:before {
+.social-icons li #github:before {
   background-image: url("images/icons/github.png");
 }
-.footer-list li #codepen:before {
+.social-icons li #codepen:before {
   background-image: url("images/icons/codepen2.png");
   width: 30px;
   height: 30px;
