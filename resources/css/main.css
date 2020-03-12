@@ -199,11 +199,16 @@ a {
 .section-education .img-holder {
   width: 100%;
   margin-top: 15px;
+  overflow: hidden;
   border: 1px solid #cccccc;
 }
 .section-education .img-holder img,
 .section-education .img-holder a {
   width: inherit;
+}
+.section-education .img-holder img {
+  display: block;
+  margin: -21.875% 0;
 }
 @media (min-width: 768px) {
   .section-education .img-holder {
