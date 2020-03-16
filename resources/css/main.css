@@ -208,7 +208,6 @@ a {
 }
 .section-education .img-holder img {
   display: block;
-  margin: -21.875% 0;
 }
 @media (min-width: 768px) {
   .section-education .img-holder {
@@ -219,6 +218,9 @@ a {
   .section-education .img-holder img {
     width: 100%;
   }
+}
+.section-education .img-holder.devbridge img {
+  margin: -21.875% 0;
 }
 
 .what-i-do .skills {
