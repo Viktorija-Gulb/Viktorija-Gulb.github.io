@@ -1,5 +1,17 @@
 import { Section } from '../components/Section'
-import { ArrowIcon } from '../components/ArrowIcon'
+import { ArrowIcon } from '../assets/Icons/ArrowIcon'
+import sekmadienioStalas from '../assets/images/sekmadienio-stalas.png'
+
+const projects = [
+  {
+    number: '01',
+    title: 'Responsive Web App',
+    tags: 'React · TypeScript · CSS',
+    url: sekmadienioStalas,
+    image: sekmadienioStalas,
+    imageAlt: 'Screenshot of the Responsive Web App project Sekmadienio stalas',
+  },
+]
 
 export const Work = () => {
   return (
@@ -25,6 +37,34 @@ export const Work = () => {
                 <p>{tags}</p>
               </div>
               <ArrowIcon />
+            </article>
+          ))}
+        </div>
+
+        <div className="project-grid">
+          {projects.map((project) => (
+            <article>
+              <a
+                className="project-image"
+                key={project.number}
+                href={project.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={project.image}
+                  alt={project.imageAlt}
+                  loading="lazy"
+                />
+              </a>
+              <div className="project-card">
+                <div className="project-number">{project.number}</div>
+                <div>
+                  <h3>{project.title}</h3>
+                  <p>{project.tags}</p>
+                </div>
+                <ArrowIcon />
+              </div>
             </article>
           ))}
         </div>

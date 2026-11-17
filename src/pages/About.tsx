@@ -1,4 +1,4 @@
-import { ArrowIcon } from '../components/ArrowIcon'
+import { ArrowIcon } from '../assets/Icons/ArrowIcon'
 import { Section } from '../components/Section'
 
 export const About = () => {

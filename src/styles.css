@@ -39,7 +39,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(237, 237, 237, 0.7), rgba(237, 237, 237, 0.8)), url('assets/book-computer-design.jpg');
+  background: linear-gradient(rgba(237, 237, 237, 0.7), rgba(237, 237, 237, 0.8)), url('assets/images/book-computer-design.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -564,4 +564,11 @@ footer > a {
     gap: 35px;
     flex-direction: column;
   }
+}
+
+.project-image img {
+  object-fit: cover;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
 }
