@@ -189,6 +189,13 @@ a {
 .section-inner {
   max-width: 1180px;
   margin: 0 auto;
+
+  .description {
+    max-width: 420px;
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
 }
 
 .light-section {
@@ -290,34 +297,6 @@ a {
   margin-top: 9px;
   color: rgba(244,244,241,.58);
   font-size: 13px;
-}
-
-.timeline {
-  padding-top: 35px;
-}
-
-.timeline-item {
-  border-top: 1px solid var(--line);
-  padding: 27px 0 35px;
-}
-
-.timeline-item span {
-  font-size: 10px;
-  letter-spacing: .17em;
-  color: #777976;
-}
-
-.timeline-item h3 {
-  font-size: 22px;
-  font-weight: 500;
-  margin: 13px 0 8px;
-}
-
-.timeline-item p {
-  max-width: 490px;
-  color: var(--muted);
-  line-height: 1.7;
-  font-size: 14px;
 }
 
 .work-heading {

@@ -4,7 +4,6 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   max-width: 520px;
-  margin-top: 24px;
 }
 
 .learning-image-button {
@@ -22,7 +21,6 @@
 .learning-image {
   display: block;
   width: 100%;
-  height: 160px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }

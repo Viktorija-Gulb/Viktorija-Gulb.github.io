@@ -1,11 +1,12 @@
 import Introduction from './pages/Introduction'
 import { Footer } from './components/Footer'
 import { About } from './pages/About'
-import { Education } from './pages/Education'
+
 import { Work } from './pages/Work'
 import Skills from './components/Skills/Skills'
 
 import './App.css'
+import { Education } from './components/Education/Education'
 
 function App() {
   return (
