@@ -1,15 +1,33 @@
 import { Section } from '../components/Section'
-import { ArrowIcon } from '../assets/Icons/ArrowIcon'
-import sekmadienioStalas from '../assets/images/sekmadienio-stalas.png'
+import ProjectCard from './ProjectCard'
+import sundayTable from '../assets/images/sunday-table.png'
 
-const projects = [
+import './Work.css'
+
+type Project = {
+  id: number
+  category: string
+  title: string
+  description: string
+  year: string
+  image: string
+  technologies: string[]
+  liveUrl?: string
+  githubUrl?: string
+}
+
+const projects: Project[] = [
   {
-    number: '01',
+    id: 1,
+    category: 'Web Application',
     title: 'Responsive Web App',
-    tags: 'React · TypeScript · CSS',
-    url: sekmadienioStalas,
-    image: sekmadienioStalas,
-    imageAlt: 'Screenshot of the Responsive Web App project Sekmadienio stalas',
+    description:
+      'A responsive web application focused on providing an intuitive user experience and clean, accessible interface.',
+    year: '2026',
+    image: sundayTable,
+    technologies: ['React', 'JavaScript', 'CSS'],
+    liveUrl: 'https://example.com',
+    githubUrl: 'https://github.com/username/project',
   },
 ]
 
@@ -18,54 +36,18 @@ export const Work = () => {
     <Section id="work" className="work-section">
       <div className="section-inner">
         <p className="section-kicker">04 / MY WORK</p>
-        <div className="work-heading">
+        <div className="">
           <h2>
             Selected <em>projects.</em>
           </h2>
-          <p>A small collection of things I’ve designed and built.</p>
-        </div>
-        <div className="project-grid">
-          {[
-            ['01', 'Portfolio Landing Page', 'React · TypeScript · CSS'],
-            ['02', 'Responsive Web App', 'React · REST API · UI'],
-            ['03', 'Interactive Component', 'TypeScript · CSS · UX'],
-          ].map(([number, title, tags]) => (
-            <article className="project-card" key={number}>
-              <div className="project-number">{number}</div>
-              <div>
-                <h3>{title}</h3>
-                <p>{tags}</p>
-              </div>
-              <ArrowIcon />
-            </article>
-          ))}
+          <p className="description">
+            A small collection of things I’ve designed and built.
+          </p>
         </div>
 
         <div className="project-grid">
-          {projects.map((project) => (
-            <article>
-              <a
-                className="project-image"
-                key={project.number}
-                href={project.url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={project.image}
-                  alt={project.imageAlt}
-                  loading="lazy"
-                />
-              </a>
-              <div className="project-card">
-                <div className="project-number">{project.number}</div>
-                <div>
-                  <h3>{project.title}</h3>
-                  <p>{project.tags}</p>
-                </div>
-                <ArrowIcon />
-              </div>
-            </article>
+          {projects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
       </div>

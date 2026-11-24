@@ -47,7 +47,7 @@ function Skills() {
           My technical <em>toolkit.</em>
         </h2>
 
-        <p className="skills-description">
+        <p className="description">
           Technologies, tools and methodologies I used to build across different
           projects.
         </p>

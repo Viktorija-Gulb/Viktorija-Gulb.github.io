@@ -3,19 +3,11 @@
 .skills-section {
   background: #292a2b;
   color: #f4f4f1;
+  .description {
+    color: rgba(244, 244, 241, 0.6);
+  }
 }
 
-.skills-section h2 {
-  max-width: 650px;
-}
-
-.skills-description {
-  max-width: 420px;
-  margin-top: 24px;
-  color: rgba(244, 244, 241, 0.6);
-  font-size: 14px;
-  line-height: 1.8;
-}
 
 /* Categories layout */
 .skills-groups {
