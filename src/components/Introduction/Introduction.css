@@ -1,0 +1,319 @@
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(237, 237, 237, 0.7), rgba(237, 237, 237, 0.8)),
+    url('../../assets/images/book-computer-design.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(247, 247, 243, 0.58);
+  backdrop-filter: blur(1.2px);
+}
+
+.key-row {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 9px;
+}
+
+.key-row i {
+  width: 54px;
+  height: 39px;
+  display: block;
+  border-radius: 5px;
+  background: #b7bab8;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.55), 0 3px 5px rgba(60, 60, 60, 0.08);
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 7.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.brand {
+  display: none;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -.05em;
+}
+
+.brand span {
+  color: #b48d70;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 34px;
+  margin-left: auto;
+}
+
+.nav-menu a {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .01em;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.nav-menu a:hover {
+  opacity: .55;
+  transform: translateY(-1px);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  &.is-open {
+    display: none;
+  }
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: .23em;
+  color: #666967;
+  margin-bottom: 20px;
+  opacity: .85;
+}
+
+.hero h1 {
+  font-size: clamp(52px, 6.1vw, 92px);
+  line-height: .98;
+  font-weight: 300;
+  letter-spacing: -.055em;
+}
+
+.hero h1 span {
+  font-weight: 300;
+}
+
+.role {
+  margin-top: 30px;
+  font-size: clamp(18px, 1.8vw, 27px);
+  font-weight: 400;
+}
+
+.hero-line {
+  width: 405px;
+  max-width: 65vw;
+  height: 1px;
+  background: rgba(42, 43, 44, .7);
+  margin: 78px auto 20px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+
+.socials a {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  color: #353738;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-3px);
+  opacity: .65;
+}
+
+.scroll-cue {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 68px;
+  font-size: 10px;
+  letter-spacing: .2em;
+  color: #656866;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    min-height: 760px;
+  }
+
+  .nav {
+    padding: 25px 6%;
+  }
+
+  .brand {
+    display: block;
+  }
+
+  .nav-toggle {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 0;
+    border: 1px solid rgba(41, 42, 43, 0.18);
+    border-radius: 50%;
+    background: rgba(244, 244, 241, 0.72);
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 18px;
+    height: 1px;
+    background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .nav-toggle.is-open span:first-child {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.is-open span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(24px, 5vh, 42px);
+    margin: 0;
+    background: rgba(244, 244, 241, 0.1);
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-menu.is-open {
+    visibility: visible;
+  }
+
+  .nav-menu a {
+    font-size: clamp(16px, 4vw, 18px);
+    letter-spacing: 0.08em;
+  }
+
+  .notebook {
+    width: 270px;
+    height: 200px;
+    left: 0;
+    top: 100px;
+    padding-left: 45px;
+    opacity: .55;
+  }
+
+  .notebook span {
+    font-size: 28px;
+  }
+
+  .notebook small {
+    font-size: 11px;
+  }
+
+  .keyboard {
+    width: 390px;
+    right: -120px;
+    bottom: 0;
+  }
+
+  .key-row i {
+    width: 41px;
+    height: 30px;
+  }
+
+  .hero-content {
+    margin-top: 30px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+  }
+
+  .hero-line {
+    margin-top: 55px;
+  }
+
+  .scroll-cue {
+    margin-top: 52px;
+  }
+}
+
+@media (max-width: 460px) {
+  .hero {
+    min-height: 700px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .role {
+    margin-top: 20px;
+  }
+
+  .hero-line {
+    max-width: 78vw;
+  }
+
+  .desk-left {
+    width: 100vw;
+    left: -55vw;
+  }
+
+  .desk-right {
+    width: 90vw;
+    right: -45vw;
+  }
+
+  .notebook {
+    left: -55px;
+    opacity: .38;
+  }
+
+  .keyboard {
+    right: -220px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-menu,
+  .nav-toggle span {
+    transition: none;
+  }
+}
