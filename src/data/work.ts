@@ -11,7 +11,7 @@ export const projects: Project[] = [
     year: '2026',
     image: sundayTable,
     technologies: ['React', 'JavaScript', 'CSS'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/username/project',
+    liveUrl: 'https://recipes-collection-ruby.vercel.app/',
+    githubUrl: 'https://github.com/Viktorija-Gulb/recipes-collection',
   },
 ]

@@ -4,7 +4,7 @@ export const skillGroups: SkillGroup[] = [
   {
     category: 'Frontend',
     description: 'Building interactive web applications',
-    skills: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'jQuery'],
+    skills: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'SCSS', 'jQuery', 'React testing library', 'TanStack Query', 'React Hook Form'],
   },
   {
     category: 'UI & Design',
