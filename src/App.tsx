@@ -1,10 +1,10 @@
 import Introduction from './components/Introduction'
-import Footer from './components/Footer/Footer'
-import Skills from './components/Skills/Skills'
 import About from './components/About'
+import Skills from './components/Skills/Skills'
+import Education from './components/Education/Education'
+import Work from './components/WorkSection/Work'
+import Footer from './components/Footer/Footer'
 
-import { Education } from './components/Education/Education'
-import { Work } from './components/WorkSection/Work'
 import './App.css'
 
 function App() {

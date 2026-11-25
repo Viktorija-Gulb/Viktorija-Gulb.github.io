@@ -2,7 +2,7 @@ import { skillGroups } from '../../data/skills'
 import Section from '../common/Section'
 import './Skills.css'
 
-function Skills() {
+const Skills = () => {
   return (
     <Section className="skills-section" id="skills">
       <div className="section-inner">

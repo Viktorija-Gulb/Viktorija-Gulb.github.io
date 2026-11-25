@@ -10,7 +10,7 @@ const navItems = [
   ['MY WORK', 'work'],
 ]
 
-function Introduction() {
+const Introduction = () => {
   return (
     <Section className="hero" id="home">
       <header className="nav">

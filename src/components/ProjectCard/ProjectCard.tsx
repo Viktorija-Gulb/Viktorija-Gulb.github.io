@@ -1,21 +1,5 @@
+import type { ProjectCardProps } from '../../types/work'
 import './ProjectCard.css'
-
-type Project = {
-  id: number
-  category: string
-  title: string
-  description: string
-  year: string
-  image: string
-  technologies: string[]
-  liveUrl?: string
-  githubUrl?: string
-}
-
-type ProjectCardProps = {
-  project: Project
-  index: number
-}
 
 function ProjectCard({ project, index }: ProjectCardProps) {
   const isReversed = index % 2 !== 0
