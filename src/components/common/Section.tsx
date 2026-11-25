@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-export const Section = ({
+const Section = ({
   id,
   children,
   className = '',
@@ -13,3 +13,5 @@ export const Section = ({
     {children}
   </section>
 )
+
+export default Section

@@ -1,6 +1,6 @@
-import { Section } from '../components/Section'
-import ProjectCard from './ProjectCard'
-import sundayTable from '../assets/images/sunday-table.png'
+import sundayTable from '../../assets/images/sunday-table.png'
+import ProjectCard from '../ProjectCard/ProjectCard'
+import Section from '../common/Section'
 
 import './Work.css'
 

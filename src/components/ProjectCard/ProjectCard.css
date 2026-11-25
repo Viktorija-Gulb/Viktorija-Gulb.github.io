@@ -93,16 +93,15 @@
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 28px;
+  color: #777976;
 }
 
 .project-number {
-  color: #a28e7a;
   font-size: 11px;
   letter-spacing: 0.12em;
 }
 
 .project-category {
-  color: #777976;
   font-size: 10px;
   letter-spacing: 0.12em;
 }

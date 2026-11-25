@@ -1,0 +1,44 @@
+footer {
+  padding: 70px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background: #292a2b;
+  color: #f4f4f1;
+}
+
+.footer-mark {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -.06em;
+}
+
+.footer-mark span {
+  color: #b48d70;
+}
+
+footer p {
+  margin-top: 10px;
+  color: rgba(244, 244, 241, .55);
+  font-size: 13px;
+}
+
+footer > a {
+  font-size: 10px;
+  letter-spacing: .15em;
+  opacity: .7;
+}
+
+@media (max-width: 800px) {
+  footer {
+    padding: 50px 7%;
+  }
+}
+
+@media (max-width: 460px) {
+  footer {
+    align-items: start;
+    gap: 35px;
+    flex-direction: column;
+  }
+}

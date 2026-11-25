@@ -1,6 +1,7 @@
 import { ArrowIcon } from '../assets/Icons/ArrowIcon'
 import { GitHubIcon } from '../assets/Icons/GithubIcon'
 import { LinkedInIcon } from '../assets/Icons/LinkedinIcon'
+import Section from './common/Section'
 
 const navItems = [
   ['ABOUT', 'about'],
@@ -11,7 +12,7 @@ const navItems = [
 
 function Introduction() {
   return (
-    <section className="hero" id="home">
+    <Section className="hero" id="home">
       <header className="nav">
         <a className="brand" href="#home">
           VN<span>.</span>
@@ -54,7 +55,7 @@ function Introduction() {
           SCROLL <ArrowIcon />
         </a>
       </div>
-    </section>
+    </Section>
   )
 }
 

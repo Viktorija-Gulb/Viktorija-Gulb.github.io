@@ -1,4 +1,6 @@
-export const Footer = () => {
+import './Footer.css'
+
+const Footer = () => {
   return (
     <footer>
       <div>
@@ -11,3 +13,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer

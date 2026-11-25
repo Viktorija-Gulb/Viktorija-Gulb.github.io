@@ -1,7 +1,7 @@
 import { ArrowIcon } from '../assets/Icons/ArrowIcon'
-import { Section } from '../components/Section'
+import Section from './common/Section'
 
-export const About = () => {
+const About = () => {
   return (
     <Section id="about" className="light-section">
       <div className="section-inner two-column">
@@ -28,3 +28,5 @@ export const About = () => {
     </Section>
   )
 }
+
+export default About

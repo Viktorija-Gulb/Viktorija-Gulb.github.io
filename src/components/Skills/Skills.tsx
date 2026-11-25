@@ -1,45 +1,10 @@
+import { skillGroups } from '../../data/skills'
+import Section from '../common/Section'
 import './Skills.css'
-
-type SkillGroup = {
-  category: string
-  description: string
-  skills: string[]
-}
-
-const skillGroups: SkillGroup[] = [
-  {
-    category: 'Frontend',
-    description: 'Building interactive web applications',
-    skills: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'jQuery'],
-  },
-  {
-    category: 'UI & Design',
-    description: 'Creating consistent user interfaces',
-    skills: ['Figma', 'Photoshop', 'Material UI', 'Bootstrap', 'BEM'],
-  },
-  {
-    category: 'Tools & Workflow',
-    description: 'Development and collaboration tools',
-    skills: [
-      'Git',
-      'GitHub',
-      'Command line',
-      'npm',
-      'Storybook',
-      'Jira',
-      'Scrum',
-    ],
-  },
-  {
-    category: 'State Management',
-    description: 'Application state and architecture',
-    skills: ['Redux', 'Redux-saga'],
-  },
-]
 
 function Skills() {
   return (
-    <section className="section skills-section" id="skills">
+    <Section className="skills-section" id="skills">
       <div className="section-inner">
         <p className="section-kicker">02 / SKILLS</p>
 
@@ -76,7 +41,7 @@ function Skills() {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 
