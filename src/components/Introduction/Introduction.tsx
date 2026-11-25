@@ -28,24 +28,10 @@ const Introduction = () => {
 
   return (
     <Section className="hero" id="home">
-      <header className="nav">
+      <header className={`nav${isMenuOpen ? ' is-open' : ''}`}>
         <a className="brand" href="#home">
           VN<span>.</span>
         </a>
-        <button
-          className={`nav-toggle${isMenuOpen ? ' is-open' : ''}`}
-          type="button"
-          aria-label={
-            isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'
-          }
-          aria-expanded={isMenuOpen}
-          aria-controls="primary-navigation"
-          onClick={() => setIsMenuOpen((open) => !open)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
         <nav
           className={`nav-menu${isMenuOpen ? ' is-open' : ''}`}
           id="primary-navigation"
@@ -61,6 +47,20 @@ const Introduction = () => {
             </a>
           ))}
         </nav>
+        <button
+          className={`nav-toggle${isMenuOpen ? ' is-open' : ''}`}
+          type="button"
+          aria-label={
+            isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'
+          }
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setIsMenuOpen((open) => !open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </header>
 
       <div className={`hero-content ${isMenuOpen ? 'is-open' : ''}`}>
