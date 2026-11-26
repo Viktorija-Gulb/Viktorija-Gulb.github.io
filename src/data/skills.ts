@@ -17,6 +17,7 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       'Git',
       'GitHub',
+      'Bitbucket',
       'Command line',
       'npm',
       'Storybook',

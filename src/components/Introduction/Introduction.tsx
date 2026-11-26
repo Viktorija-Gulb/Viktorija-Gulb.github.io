@@ -29,9 +29,6 @@ const Introduction = () => {
   return (
     <Section className="hero" id="home">
       <header className={`nav${isMenuOpen ? ' is-open' : ''}`}>
-        <a className="brand" href="#home">
-          VN<span>.</span>
-        </a>
         <nav
           className={`nav-menu${isMenuOpen ? ' is-open' : ''}`}
           id="primary-navigation"

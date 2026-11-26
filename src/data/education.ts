@@ -33,7 +33,7 @@ export const educationItems: EducationEntry[] = [
     institution: 'Devbridge Group',
     title: 'Sourcery for Front-End',
     description:
-      'Sourcery is a 12-week program designed for aspiring software engineers. I had the opportunity to take part in this program, where I strengthened my front-end and web development skills, explored industry best practices, and gained valuable experience working in a real development team.',
+      'Sourcery is a 12-week program designed for aspiring software engineers. I had the opportunity to take part in this program, where I strengthened my front-end and web development skills, explored industry best practices, and gained valuable experience working in a cool development team.',
     technologies: [
       'JavaScript',
       'SCSS',

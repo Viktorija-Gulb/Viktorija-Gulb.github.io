@@ -47,17 +47,6 @@
   z-index: 5;
 }
 
-.brand {
-  display: none;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: -.05em;
-}
-
-.brand span {
-  color: #b48d70;
-}
-
 .nav-menu {
   display: flex;
   gap: 34px;
@@ -163,12 +152,10 @@
     padding: 25px 6%;
   }
 
-  .brand {
-    display: block;
-  }
-
   .nav-toggle {
-    position: relative;
+    position: absolute;
+    right: 7%;
+    top: 40px;
     z-index: 5;
     display: flex;
     width: 44px;
@@ -207,7 +194,7 @@
 
   .nav-menu {
     position: absolute;
-    inset: 50vh 0;
+    inset: 40vh 0;
     z-index: 4;
     display: flex;
     flex-direction: column;

@@ -8,7 +8,7 @@
   grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
   gap: 30px;
   align-items: center;
-  padding: 35px 0;
+  padding: 50px 0;
 }
 
 /* Alternate layout */
@@ -33,7 +33,6 @@
   position: relative;
   display: block;
   width: 100%;
-  /* aspect-ratio: 16 / 10; */
   overflow: hidden;
   border: 1px solid rgba(40, 40, 40, 0.12);
   background: #deddd8;

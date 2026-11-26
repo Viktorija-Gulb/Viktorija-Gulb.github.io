@@ -13,9 +13,7 @@ const Work = () => {
           <h2>
             Selected <em>projects.</em>
           </h2>
-          <p className="description">
-            A small collection of things I’ve designed and built.
-          </p>
+          <p className="description">Collection of things I’ve built.</p>
         </div>
 
         <div className="project-grid">
