@@ -1,0 +1,5 @@
+.about-section {
+  .two-column {
+    grid-template-columns: 1fr 1fr;
+  }
+}

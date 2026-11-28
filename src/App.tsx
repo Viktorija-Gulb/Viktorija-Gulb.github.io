@@ -1,5 +1,5 @@
 import Introduction from './components/Introduction/Introduction'
-import About from './components/About'
+import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Education from './components/Education/Education'
 import Work from './components/WorkSection/Work'

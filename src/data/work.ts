@@ -24,7 +24,7 @@ export const projects: Project[] = [
     year: '2020',
     image: kidsClothesSizes,
     technologies: ['React', 'SCSS', 'Responsive'],
-    liveUrl: '',
+    liveUrl: 'https://kids-clothes-sizes.vercel.app/',
     githubUrl: 'https://github.com/Viktorija-Gulb/kids-clothes-sizes',
   },
 ]

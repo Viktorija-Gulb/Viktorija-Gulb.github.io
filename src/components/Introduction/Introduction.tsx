@@ -69,20 +69,20 @@ const Introduction = () => {
         <div className="hero-line" />
         <div className="socials">
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/viktorijagulbickaja/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
           >
-            <LinkedInIcon />
+            <LinkedInIcon size={27} />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/Viktorija-Gulb"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
           >
-            <GitHubIcon />
+            <GitHubIcon size={27} />
           </a>
         </div>
         <a className="scroll-cue" href="#about">

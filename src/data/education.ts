@@ -83,7 +83,7 @@ export const educationItems: EducationEntry[] = [
     institution: 'IT ProTraining',
     title: 'Basics of web programming',
     description:
-      'Project "Start an IT career" ("Pradėk IT karjerą") by the Irish Training FIT4JOBS methodology (Organizator "Langas į ateitį").',
+       'Completed introductory web development training through the “Start an IT Career” (Pradėk IT karjerą) project, following the FIT4J methodology and organized by “Langas į ateitį.” This training marked the beginning of my journey into frontend development.',
     technologies: ['Web Programming', 'HTML', 'CSS', 'JavaScript'],
     images: [
       {

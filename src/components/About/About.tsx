@@ -1,9 +1,10 @@
-import { ArrowIcon } from '../assets/Icons/ArrowIcon'
-import Section from './common/Section'
+import { ArrowIcon } from '../../assets/Icons/ArrowIcon'
+import Section from '../common/Section'
+import './About.css'
 
 const About = () => {
   return (
-    <Section id="about" className="light-section">
+    <Section id="about" className="light-section about-section">
       <div className="section-inner two-column">
         <div>
           <p className="section-kicker">01 / ABOUT</p>

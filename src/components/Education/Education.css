@@ -21,7 +21,6 @@
 }
 
 .timeline-item p {
-  max-width: 490px;
   color: var(--muted);
   line-height: 1.7;
   font-size: 14px;
@@ -64,10 +63,6 @@
   text-transform: uppercase;
 }
 
-.timeline-details {
-  max-width: 650px;
-}
-
 .timeline-institution {
   margin-bottom: 5px;
   color: #8b8176;
@@ -85,7 +80,6 @@
 }
 
 .timeline-description {
-  max-width: 590px;
   margin: 0;
   color: var(--muted, #6f706d);
   font-size: 15px;
